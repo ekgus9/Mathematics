@@ -46,18 +46,18 @@ left singular vector : U의 열들 / right singular vector : V의 열들
 
 
 
-일반화된 역행렬 : 행렬 A가 크기가 m * n인 경우 크기 n * m인 행렬 A^+를 행렬 A의 pseudo-inverse라 한다. (U, V는 직교행렬)
+일반화된 역행렬 : 행렬 A가 크기가 m * n인 경우 크기 n * m인 행렬 A^+를 행렬 A의 **pseudo-inverse**라 한다. (U, V는 직교행렬)
 
 
 
 
-* full column rank를 갖는 m * n 행렬의 pseudo-inverse : 행렬 A가 n개의 열이 모두 일차독립인 full column rank를 갖는 m * n 행렬이면 Ax = b의 양변에 A^T를 곱한 식을 정규방정식이라하고, 이는 언제나 유일해 x = (A^T A)^-1 A^T b를 갖는다. 이때 A^+ = (A^T A)^-1 A^T를 A의 pseudo-inverse라 한다. 
+* full column rank를 갖는 m * n 행렬의 pseudo-inverse : 행렬 A가 n개의 열이 모두 일차독립인 full column rank를 갖는 m * n 행렬이면 Ax = b의 양변에 A^T를 곱한 식을 **정규방정식**이라하고, 이는 언제나 **유일해** x = (A^T A)^-1 A^T b를 갖는다. 이때 A^+ = (A^T A)^-1 A^T를 A의 **pseudo-inverse**라 한다. 
 
 ```
 (A.transpose()*A).inverse()*A.transpose()
 ```
 
-* 최소제곱해 : A가 m * n 행렬이고 b는 R^n의 임의의 벡터이면, x = A^+ b는 Ax = b의 최소제곱해이다. least square line
+* 최소제곱해 : A가 m * n 행렬이고 b는 R^n의 임의의 벡터이면, **x = A^+ b**는 Ax = b의 최소제곱해이다. least square line
 
 
 
@@ -85,7 +85,7 @@ left singular vector : U의 열들 / right singular vector : V의 열들
 
 
 
-q(x) = x^T Ax = x^T Bx이므로 (C 사라짐) 이차형식 값은 주어진 행렬의 대칭부분에만 의존하므로 일반성을 잃지 않고 정의에서부터 A를 대칭행렬으로 정의한다. 이차형식에 관한 연구의 많은 부분은 '대칭행렬 A는 언제나 직교대각화 가능하다'는 사실과 밀접한 연관이 있다. 
+q(x) = x^T Ax = x^T Bx이므로 (C 사라짐) 이차형식 값은 주어진 행렬의 대칭부분에만 의존하므로 일반성을 잃지 않고 정의에서부터 A를 대칭행렬으로 정의한다. 이차형식에 관한 연구의 많은 부분은 **'대칭행렬 A는 언제나 직교대각화 가능하다'**는 사실과 밀접한 연관이 있다. 
 
 
 
